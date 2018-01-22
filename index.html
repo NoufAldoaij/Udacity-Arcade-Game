@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Udacity Aracad Game Project">
+    <meta name="keywords" content="HTML,CSS,Udacity,">
+    <meta name="author" content="Nouf Aldoaij">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Udacity Aracadium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+
+    <script src="js/engine.js"></script>
+
+    <!-- Game Screen -->
+    <div class="gameMeun" id="gameMeun">
+        <h1 class="gameTitel">Udacity Aracadium </h1>
+        <a id="playGame" class="gameButton blink_me">Start!!!</a>
+        <div class="dropdown gameButton blink_me">
+            <span>Change difficulty</span>
+            <div class="dropdown-content">
+                <a class="gameButton blink_me" id ="easy">Easy</a>
+                <a class="gameButton blink_me" id="Normal">Normal</a>
+                <a class="gameButton blink_me" id="Hard">Hard</a>
+
+            </div>
+        </div>
+        <a class="gameButton" id="howToPlay">How To Play</a>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div class="gameOver hidden" id="gameOver">
+        <h1 class="gameTitel">Game Over!!!</h1>
+        <img src="images/Gameover.png" class="gameOverImg" alt="Gameover">
+        <a id="gameOver" class="playAgain">Play Again!!!</a>
+    </div>
+
+    <!-- Game Win Screen -->
+    <div class="GameWin hidden" id="gameWin">
+        <h1 class="gameTitel">Congratulation You Win!!!</h1>
+        <a id="gameAgain" class="playAgain">Play Again!!!</a>
+    </div>
+    <!-- How To Play Screen -->
+    <div class="hidden howToPlay" id="howTo">
+        <div class="container">
+            <h1>How to Play</h1>
+            <ul>
+                <li>
+                    Press the ▲, ▼, ► and ◄ keys to move the player.
+                </li>
+                <li>
+                    Try to get to the other side of the map without geting hit by the emeny
+                </li>
+                <li>
+                    You have 3 lives, and you will lose one each time you get hit.
+                </li>
+                <li>
+                    Collecet the Gems to while dodgeing the enemy and try to reach 300 gems to win
+                </li>
+                <li>
+                    The Game have 3 difficulty setting
+                    <ul>
+                        <li>
+                            Easy where to have to collecet 500 Gems to win and you have 5 lives 
+                        </li>
+                        <li>
+                            Normal where to have to collecet 2000 Gems to win and you have 3 lives  which is the default difficulty
+                        </li>
+                        <li>
+                            Hard where to have to collecet 4000 Gems to win and you have 1 lives 
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+
+            <a id="Close" class="gameButton">Play!!</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

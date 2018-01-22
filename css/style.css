@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "ArcadeClassic";
+  src: url(../font/PressStart2P.TTF); 
+  font-size: 16px
+  
+}
+
+body {
+    text-align: center;
+    font-family: 'ArcadeClassic';
+    font-size: 20px;
+    background-color: #000;
+}
+
+li {
+    padding: 20px;
+}
+
+.gameMeun {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;	
+} 
+
+.gameTitel{
+    left: 0;
+    line-height: 200px;
+    margin-top: -100px;
+    position: fixed;
+    top: 50%;
+    width: 100%;
+    background: -webkit-linear-gradient(#23966c, #faaa54, #e23b4a, #db0768, #360670);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.gameButton {
+    color: #fff;
+    position: relative;
+    display:block; 
+    padding-top:29px;
+    top: 55%; 
+}
+
+
+.gameButton:hover {
+    animation: blinker 1s linear infinite;
+    color: #6a13d4;
+    cursor: pointer;
+  }
+  
+@keyframes blinker {  
+    50% { opacity: 0; }
+ }
+
+  
+.gameOver {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99998;	
+}
+
+.howToPlay{
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;	
+    color: #fff;
+}
+
+.GameWin{
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99997;	
+    color: #fff;
+}
+
+.container {
+    margin: 50px;
+    padding: 40px; 
+    font-size: 16px;
+}
+
+.playAgain {
+    color: #fff;
+    position: relative;
+    display:block; 
+    padding-top:29px;
+    top: 80%; 
+}
+
+.playAgain:hover {
+    color: red;
+    text-decoration: underline;   
+}
+
+
+.gameOverImg {
+    position: absolute;
+    display:block; 
+    top: 55%; 
+    left: 35%;
+    right: 30%;
+
+}
+
+.hidden {
+	display: none;
+}
+
+.dropdown {
+    position: relative;
+    /* display: inline-block; */
+    color: #fff;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    /* background-color: #f9f9f9; */
+    color: #fff;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
